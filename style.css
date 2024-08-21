@@ -1,0 +1,749 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.main-container{
+    width: 100%;
+    height: auto;
+    padding: 0 0rem 2rem 0rem;
+    border: 1px solid #EEEEEF;
+    border-radius: 0.8rem;
+}
+/* Header section styling begins */
+.header-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 1.5rem;
+    border-bottom: 1px solid #EEEEEF;
+}
+
+.logo-link-container{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    z-index: 100;
+}
+
+.close-and-logo-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.bars-container{
+    width: fit-content;
+    height: auto;
+    display: none;
+    cursor: pointer;
+}
+
+.bars-container i{
+    font-size: 1.5rem;
+}
+
+.logo-container{
+    width: 45px;
+    height: 45px;
+}
+
+.logo-container img{
+    width: 100%;
+    height: auto;
+}
+
+.mobile-menu{
+    width: 70%;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1.7rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    z-index: 100;
+    border-right: 1px solid #EEEEEF;
+    background-color: #fff;
+}
+
+.mobile-close-and-logo-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.mobile-close-container{
+    width: fit-content;
+    height: auto;
+    cursor: pointer;
+}
+
+.mobile-close-container i{
+    font-size: 1.5rem;
+}
+
+.mobile-logo-container{
+    width: 45px;
+    height: 45px;
+}
+
+.mobile-logo-container img{
+    width: 100%;
+    height: auto;
+}
+
+.mobile-list-menu{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 2rem;
+    list-style: none;
+}
+.mobile-list-menu li{
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+}
+.mobile-list-menu li:hover{
+    background-color: #EEEEEF;
+    cursor: pointer;
+}
+
+.desktop-links-container{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5rem;
+    list-style: none;
+}
+.desktop-links-container li{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.bell-icon-profile-container{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.bell-container{
+    width: fit-content;
+    height: auto;
+}
+
+.bell-container i{
+    font-size: 1.5rem;
+}
+
+.profile-container{
+    width: 40px;
+    height: 40px;
+}
+
+.profile-container img{
+    width: 100%;
+    height: auto;
+    border-radius: 3rem;
+}
+/* Header section styling ends here */
+
+/* Cashflow and invoice container styling begins here */
+.cashflow-and-invoice-container-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid #EEEEEF;
+}
+
+.cashflow-and-text-container{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.cashflow-container{
+    width: fit-content;
+    height: auto;
+    border-right: 1px solid #EEEEEF;
+    padding-right: 0.7rem;
+}
+.cashflow-container p, .day30-container p, .all-container p, .invoice-container p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.day7-container, .day30-container, .all-container, .icon-container, .invoice-container{
+    width: fit-content;
+    height: auto;
+}
+.day7-container p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4F46E5;
+}
+
+.invoice-and-icon-container{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    column-gap: 0.8rem;
+    background-color: #4F46E5;
+    padding: 0.6rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+}
+/* Cashflow and invoice container styling ends here */
+
+/* <!-- ACCOUNT BALANCE SECTION STYLING BEGINS HERE  --> */
+.main-account-balance-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #EEEEEF;
+    background: linear-gradient(to right, #fff 25%, #F7E9F6 125%);
+}
+
+.revenue-and-balance-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.8rem;
+    padding: 2rem 1.5rem;
+    border-left: 1px solid #EEEEEF;
+}
+
+.revenue-and-percentage-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap:  6rem;
+}
+.revenue-container, .percentage-container, .balance-container{
+    width: fit-content;
+    height: auto;
+}
+.revenue-container p, .percentage-container p{
+    font-size: 0.9rem;
+    color: #848A96;
+    font-weight: 500;
+}
+.percentage-red p{
+    color: #EA6280;
+}
+.balance-container h1{
+    font-weight: 500;
+}
+/* <!-- ACCOUNT BALANCE SECTION STYLING ENDS HERE  --> */
+
+/* Recent section styling begins here */
+.recent-section-container{
+    width: 100%;
+    height: auto;
+    padding: 4.5rem 1.5rem 1.5rem 1.5rem;
+    border-bottom: 1px solid #EEEEEF; 
+}
+.recent-section-container h3{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+/* Recent section styling ends here  */
+
+/* Today's section styling begins here */
+.today-section-container{
+    width: 100%;
+    height: auto;
+    padding: 0.8rem 1.5rem;
+    background-color: #F9FAFB;
+    border-bottom: 1px solid #EEEEEF;
+}
+.today-section-container p{
+    font-weight: 600;
+    font-size: 1rem;
+}
+/* Today's section styling ends here */
+
+/* TRANSACTION HISTORY SECTION STYLING BEGINS HERE */
+.main-transaction-history-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.transaction-history-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    border-bottom: 1px solid #EEEEEF;
+}
+
+.arrow-icon-and-balance-container{
+    width: 33%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.arrow-icon-container{
+    width: fit-content;
+    height: auto;
+}
+.arrow-icon-container i{
+    background-color: #fff;
+    color: #9CA3AF;
+    font-size: 1.1rem;
+}
+
+.balance-and-tax-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.5rem;
+}
+
+.balance-and-paid-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.8rem;
+}
+
+.balance-dollar-container, .paid-container, .tax-container, .reform-text-container, .redesign-container, .view-transaction-container, .invoice-code-container{
+    width: fit-content;
+    height: auto;
+}
+.balance-dollar-container p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.paid-container p{
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    background-color: #F0FDF4;
+    color: #3C927F;
+    border-radius: 0.4rem;
+    border: 1px solid #3C927F;
+}
+.tax-container p, .redesign-container p, .invoice-code-container p{
+    font-size: 0.9rem;
+    color: #848A96;
+    font-weight: 500;
+}
+
+.reform-and-website-container{
+    width: 33%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.5rem;
+}
+
+.reform-text-container p{
+    font-size: 1rem;
+}
+
+.view-transaction-and-code-container{
+    width: 33%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    row-gap: 0.5rem;
+}
+
+.view-transaction-container p{
+    font-size: 1rem;
+    color: #4F46E5;
+    font-weight: 500;
+}
+
+.withdraw p{
+    background-color: #F9FAFB;
+    color: #5D76A1;
+    border-radius: 0.4rem;
+    border: 1px solid #5D76A1;
+}
+.overdue p{
+    background-color: #FEF2F2;
+    color: #C85465;
+    border-radius: 0.4rem;
+    border: 1px solid #C85465;
+}
+.view-transaction-container{
+   text-align: end;
+   cursor: pointer;
+}
+/* TRANSACTION HISTORY SECTION STYLING Ends HERE */
+
+/* Main bottom container styling begins */
+.main-bottom-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 4rem 1rem 2rem 1rem;
+}
+
+.recent-and-view-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 1rem;
+}
+
+.client-container, .view-all-container{
+    width: fit-content;
+    height: auto;
+}
+
+.client-container p{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.view-all-container p{
+    font-weight: 600;
+    font-size: 1rem;
+    color: #4F46E5;
+}
+
+/* Bottom card container styling begins */
+.bottom-cards-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 1rem;
+    column-gap: 2rem;
+}
+
+.all-card-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    border: 1px solid #E7E9ED;
+    border-radius: 0.8rem;
+}
+
+.tuple-and-dot-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem;
+    background-color: #F9FAFB;
+}
+
+.tuple-and-image-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.7rem;
+}
+
+.image-container{
+    width: fit-content;
+    height: auto;
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #E7E9ED;
+    border-radius: 0.8rem;
+}
+
+.tuple-text-container{
+    width: fit-content;
+    height: auto;
+}
+
+.tuple-text-container p{
+    font-size: 1rem;
+}
+
+.dot-icon-container{
+    width: fit-content;
+    height: auto;
+    position: relative;
+}
+
+.dot-action-container{
+    width: fit-content;
+    height: auto;
+    cursor: pointer;
+    
+}
+
+.action-block-container{
+    width: fit-content;
+    height: auto;
+    padding: 1rem 5rem 1rem 0.8rem;
+    background-color: #fff;
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.8rem;
+    border-radius: 0.8rem;
+    border: 1px solid #E7E9ED;
+    position: absolute;
+    right: 0;
+}
+.action-block{
+    width: fit-content;
+    height: auto;
+    padding: 1rem 5rem 1rem 0.8rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.8rem;
+    border-radius: 0.8rem;
+    border: 1px solid #E7E9ED;
+    position: absolute;
+    right: 0;
+}
+
+.view-action-container{
+    width: fit-content;
+    height: auto;
+    cursor: pointer;
+}
+
+.edit-action-container{
+    width: fit-content;
+    height: auto;
+    cursor: pointer;
+}
+
+.view-action-container p{
+    font-size: 1rem;
+}
+
+.edit-action-container p{
+    font-size: 1rem;
+}
+
+.balance-sheet-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 0 0.8rem;
+}
+
+.last-invoice-and-date-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2.2rem;
+    border-bottom: 1px solid #E7E9ED;
+}
+
+.last-invoice-container, .all-date-container, .amount-container, .balance-container{
+    width: fit-content;
+    height: auto;
+}
+
+.last-invoice-container p, .all-date-container p, .amount-container p, .balance-container p{
+    font-size: 1rem;
+}
+
+.amount-and-figure-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+}
+
+.balance-and-history-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    column-gap: 0.8rem;
+}
+
+.history-container p{
+    background-color: #FEF2F2;
+    color: #C85465;
+    border-radius: 0.4rem;
+    border: 1px solid #C85465;
+    padding: 0.3rem;
+    font-size: 0.8rem;
+}
+
+.history-paid p{
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    background-color: #F0FDF4;
+    color: #3C927F;
+    border-radius: 0.4rem;
+    border: 1px solid #3C927F;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 840px){
+    .desktop-links-container{
+        display: none;
+    }
+    .bars-container{
+        display: block;
+    }
+    .cashflow-and-text-container{
+        flex-wrap: wrap;
+        row-gap: 1.5rem;
+    }
+    .main-account-balance-container{
+        flex-wrap: wrap;
+    }
+    .revenue-and-balance-container{
+        border-bottom: 1px solid #EEEEEF;
+        width: 50%;
+    }
+    .bottom-cards-container{
+        flex-wrap: wrap;
+        row-gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .mobile-menu{
+        width: 100%;
+    }
+    .cashflow-and-text-container{
+        flex-wrap: wrap;
+        row-gap: 1.5rem;
+    }
+    .main-account-balance-container{
+        flex-wrap: wrap;
+    }
+    .revenue-and-balance-container{
+        border-bottom: 1px solid #EEEEEF;
+        width: 100%;
+    }
+    .reform-and-website-container{
+        display: none;
+    }
+    .bottom-cards-container{
+        flex-wrap: wrap;
+        row-gap: 2rem;
+    }
+}
